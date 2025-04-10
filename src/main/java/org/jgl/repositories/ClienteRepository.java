@@ -16,6 +16,9 @@ public class ClienteRepository {
         return ConexionBD.getConnection();
     }
 
+    /**
+        Método para mostrar la lista de cliente con la consulta "SELECT * FROM cliente"
+     */
     public List<Cliente> getClientes() {
         List<Cliente> clientes = new ArrayList<>();
         String sql = "SELECT * FROM cliente";
