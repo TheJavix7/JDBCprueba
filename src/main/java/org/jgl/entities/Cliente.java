@@ -21,7 +21,6 @@ public class Cliente {
     private String region;
     private String pais;
     private String codigoPostal;
-    private Integer codigoEmpleadoRepVentas;
-    private BigDecimal limiteCredito;
-
+    private Integer repVentas; // Puede ser nulo
+    private Float limiteCredito; // Manejo de decimales para valores monetarios
 }

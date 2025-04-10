@@ -17,5 +17,4 @@ public class Empleado {
     private String codigoOficina;
     private Integer codigoJefe;
     private String puesto;
-
 }
