@@ -23,8 +23,8 @@ public class ClienteRepository {
         List<Cliente> clientes = new ArrayList<>();
         String sql = "SELECT * FROM cliente";
 
-        try(Statement stmt = getConnection().createStatement();){
-            ResultSet rs = stmt.executeQuery(sql);
+        try(Statement stmt = getConnection().createStatement();
+            ResultSet rs = stmt.executeQuery(sql)){
             while(rs.next()) {
                 Cliente cliente = new Cliente();
                 cliente.setCodigoCliente(rs.getInt("codigo_cliente"));
